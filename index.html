@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            font-family: 'Open Sans';
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 0 0 5px black;
+        }
+
+        .box {
+            box-sizing: border-box;
+            min-width: 200px;
+            width: 16.6667%;
+            height: 120px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            pointer-events: none; /* Prevent overlay from blocking clicks */
+        }
+
+        .highlight {
+            background-color: black;
+            color: red;
+        }
+
+        .highlight img {
+            opacity: 0.1; /* Set the image opacity to 10% */
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://wallpapers.com/images/featured-full/unicorn-pictures-7o6dreee22q1069j.jpg" alt="Extraordinary Claim">
+        <div class="overlay">Extraordinary Claim</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctjInrCLWlvR4tFysyklV2_ydFJS4kudDWw&usqp=CAU" alt="Rationalisation">
+        <div class="overlay">Rationalisation</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://t4.ftcdn.net/jpg/01/33/83/27/360_F_133832707_pMDMQX9uxL3DvBDPhjM3D4mpkJnwyAld.jpg" alt="Whataboutery">
+        <div class="overlay">Whataboutery</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://www.nature.com/nature-index/article/image/5deef859c114ea2bf041277c" alt="Bad Research">
+        <div class="overlay">Bad Research</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2022/07/Ad-Hominem.jpg" alt="Ad hominem">
+        <div class="overlay">Ad hominem</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://s3.envato.com/files/258670159/01.jpg" alt="Oversimplification">
+        <div class="overlay">Oversimplification</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://yesherabgye.com/wp-content/uploads/2015/10/looking-back-930x492.jpg" alt="Hindsight Bias">
+        <div class="overlay">Hindsight Bias</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://cdn.editage.com/insights/editagecom/production/styles/detail_page_image/public/Who%27s%20responsible%20for%20misrepresenting%20science%20%E2%80%93%20media%20or%20journals%20%28original%29_0.jpg?itok=W8LNl89f" alt="Using Science to Justify Beliefs">
+        <div class="overlay">Using Science To Justify Beliefs</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://slickplan.com/wp-content/uploads/2023/02/how-to-create-a-venn-diagram-1.png" alt="Confirmation Bias">
+        <div class="overlay">Confirmation Bias</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://images.freeimages.com/clg/istock/previews/8456/84560985-popular-man-get-many-gift.jpg" alt="Appeal To Popularity">
+        <div class="overlay">Appeal To Popularity</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://ptcnews-wp.s3.ap-south-1.amazonaws.com/wp-content/uploads/2020/12/books-donation-1.jpg" alt="Gish Gallop">
+        <div class="overlay">Gish Gallop</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_487/k%2Farchive%2Fc1bf9940ebfbfaf917aea7742627486b187e5672" alt="Cherry Picking">
+        <div class="overlay">Cherry Picking</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://www.unicef.org/nepal/sites/unicef.org.nepal/files/styles/hero_tablet/public/website%20-%20Copy.jpg" alt="Misinformation">
+        <div class="overlay">Misinformation</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://kashmirobserver.net/wp-content/uploads/2023/11/Ignorance-Knowledge.jpg" alt="Appeal To Ignorance">
+        <div class="overlay">Appeal To Ignorance</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://img.freepik.com/premium-vector/realistic-taijitu-symbol-black-white-yin-yang_7672-705.jpg" alt="Black and White">
+        <div class="overlay">Black and White</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="https://icma.org/sites/default/files/2022-04/AdobeStock_247068686.jpg" alt="Appeal To Authority">
+        <div class="overlay">Appeal To Authority</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <!-- Box 1 -->
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image1.jpg" alt="Background Image 1">
+        <div class="overlay">Box 1</div>
+    </div>
+    <div class="box" onclick="highlightBox(this)">
+        <img src="image36.jpg" alt="Background Image 36">
+        <div class="overlay">Box 36</div>
+    </div>
+
+    <script>
+        function highlightBox(element) {
+            element.classList.toggle("highlight");
+        }
+    </script>
+</body>
+</html>
